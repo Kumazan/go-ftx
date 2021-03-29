@@ -20,6 +20,12 @@ type Coin struct {
 	CanDeposit  bool `json:"canDeposit"`
 	CanWithdraw bool `json:"canWithdraw"`
 	HasTag      bool `json:"hasTag"`
+
+	Collateral       bool    `json:"collateral"`
+	CollateralWeight float64 `json:"collateralWeight"`
+
+	Fiat    bool `json:"fiat"`
+	IsToken bool `json:"isToken"`
 }
 
 func (req *RequestForCoins) Path() string {
