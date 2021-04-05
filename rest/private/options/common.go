@@ -3,8 +3,8 @@ package options
 import "time"
 
 type Quote struct {
-	ID          int     `json:"id"`
-	RequestID   int     `json:"requestId"`
+	ID          int64   `json:"id"`
+	RequestID   int64   `json:"requestId"`
 	Status      string  `json:"status"`
 	QuoterSide  string  `json:"quoterSide"`
 	RequestSide string  `json:"requestSide"`

@@ -26,7 +26,7 @@ type ResponseForModifyOrder struct {
 	FilledSize    float64 `json:"filledSize"`
 	RemainingSize float64 `json:"remainingSize"`
 
-	ID         int       `json:"id"`
+	ID         int64     `json:"id"`
 	ReduceOnly bool      `json:"reduceOnly"`
 	Ioc        bool      `json:"ioc"`
 	PostOnly   bool      `json:"postOnly"`

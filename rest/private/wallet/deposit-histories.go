@@ -18,8 +18,8 @@ type History struct {
 	Size float64 `json:"size,string"`
 	Fee  float64 `json:"fee"`
 
-	Confirmations int `json:"confirmations"`
-	ID            int `json:"id"`
+	Confirmations int   `json:"confirmations"`
+	ID            int64 `json:"id"`
 
 	ConfirmedTime time.Time `json:"confirmedTime"`
 	SentTime      time.Time `json:"sentTime"`

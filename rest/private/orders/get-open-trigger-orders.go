@@ -38,7 +38,7 @@ type OpenTriggerOrder struct {
 	ReduceOnly       bool    `json:"reduceOnly"`
 	RetryUntilFilled bool    `json:"retryUntilFilled"`
 	FilledSize       float64 `json:"filledSize"`
-	ID               int     `json:"id"`
+	ID               int64   `json:"id"`
 }
 
 func (req *RequestForOpenTriggerOrders) Path() string {

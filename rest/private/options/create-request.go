@@ -20,11 +20,11 @@ type RequestForCreateOpQuoteRequest struct {
 	LimitPrice     float64 `json:"limitPrice,omitempty"`
 	HideLimitPrice bool    `json:"hideLimitPrice,omitempty"`
 	RequestExpiry  int64   `json:"requestExpiry,omitempty"`
-	CounterpartyID int     `json:"counterpartyId,omitempty"`
+	CounterpartyID int64   `json:"counterpartyId,omitempty"`
 }
 
 type ResponseForCreateOpQuoteRequest struct {
-	ID     int `json:"id"`
+	ID     int64 `json:"id"`
 	Option struct {
 		Strike     float64   `json:"strike"`
 		Type       string    `json:"type"`

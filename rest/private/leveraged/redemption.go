@@ -19,7 +19,7 @@ type ResponseForRedemptionLvToken struct {
 	Pending           bool      `json:"pending"`
 	RequestedAt       time.Time `json:"requestedAt"`
 
-	ID int `json:"id"`
+	ID int64 `json:"id"`
 }
 
 func (req *RequestForRedemptionLvToken) Path() string {

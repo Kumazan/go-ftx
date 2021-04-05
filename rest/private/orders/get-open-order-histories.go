@@ -30,10 +30,10 @@ type Histories struct {
 	Size          float64 `json:"size"`
 	RemainingSize float64 `json:"remainingSize"`
 
-	ID         int  `json:"id"`
-	Ioc        bool `json:"ioc"`
-	PostOnly   bool `json:"postOnly"`
-	ReduceOnly bool `json:"reduceOnly"`
+	ID         int64 `json:"id"`
+	Ioc        bool  `json:"ioc"`
+	PostOnly   bool  `json:"postOnly"`
+	ReduceOnly bool  `json:"reduceOnly"`
 
 	CreatedAt time.Time `json:"createdAt"`
 }

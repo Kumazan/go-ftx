@@ -35,9 +35,9 @@ type Fill struct {
 
 	Time time.Time `json:"time"`
 
-	ID      int `json:"id"`
-	OrderID int `json:"orderId"`
-	TradeID int `json:"tradeId"`
+	ID      int64 `json:"id"`
+	OrderID int64 `json:"orderId"`
+	TradeID int64 `json:"tradeId"`
 }
 
 func (req *Request) Path() string {
