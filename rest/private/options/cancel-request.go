@@ -11,7 +11,7 @@ type RequestForCancelOpQuoteRequest struct {
 }
 
 type ResponseForCancelOpQuoteRequest struct {
-	ID     int `json:"id"`
+	ID     int64 `json:"id"`
 	Option struct {
 		Expiry     time.Time `json:"expiry"`
 		Strike     float64   `json:"strike"`

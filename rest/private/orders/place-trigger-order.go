@@ -31,9 +31,9 @@ type ResponseForPlaceTriggerOrder struct {
 
 	OrderPrice float64 `json:"orderPrice"`
 
-	ID               int  `json:"id"`
-	ReduceOnly       bool `json:"reduceOnly"`
-	RetryUntilFilled bool `json:"retryUntilFilled"`
+	ID               int64 `json:"id"`
+	ReduceOnly       bool  `json:"reduceOnly"`
+	RetryUntilFilled bool  `json:"retryUntilFilled"`
 
 	TriggeredAt time.Time `json:"triggeredAt"`
 	CreatedAt   time.Time `json:"createdAt"`

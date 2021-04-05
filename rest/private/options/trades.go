@@ -16,7 +16,7 @@ type RequestForOpTrades struct {
 type ResponseForOpTrades []OpTrade
 
 type OpTrade struct {
-	ID     int       `json:"id"`
+	ID     int64     `json:"id"`
 	Price  float64   `json:"price"`
 	Size   float64   `json:"size"`
 	Option Option    `json:"option"`

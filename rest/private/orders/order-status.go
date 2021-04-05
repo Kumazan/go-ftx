@@ -25,10 +25,10 @@ type ResponseForOrderStatus struct {
 	Size          float64 `json:"size"`
 	RemainingSize float64 `json:"remainingSize"`
 
-	ID         int  `json:"id"`
-	Ioc        bool `json:"ioc"`
-	ReduceOnly bool `json:"reduceOnly"`
-	PostOnly   bool `json:"postOnly"`
+	ID         int64 `json:"id"`
+	Ioc        bool  `json:"ioc"`
+	ReduceOnly bool  `json:"reduceOnly"`
+	PostOnly   bool  `json:"postOnly"`
 
 	CreatedAt time.Time `json:"createdAt"`
 }

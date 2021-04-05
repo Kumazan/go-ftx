@@ -22,7 +22,7 @@ type Withdraw struct {
 
 	Time time.Time `json:"time"`
 
-	ID int `json:"id"`
+	ID int64 `json:"id"`
 }
 
 func (req *RequestForWithdrawHistories) Path() string {

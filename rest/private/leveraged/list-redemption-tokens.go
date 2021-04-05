@@ -11,7 +11,7 @@ type RequestForRedemptionLvTokens struct {
 type ResponseForRedemptionLvTokens []Redemption
 
 type Redemption struct {
-	ID          int       `json:"id"`
+	ID          int64     `json:"id"`
 	Token       string    `json:"token"`
 	Size        float64   `json:"size"`
 	Price       float64   `json:"price"`

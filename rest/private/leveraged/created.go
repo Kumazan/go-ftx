@@ -22,8 +22,8 @@ type ResponseForCreatedLvToken struct {
 	Cost          float64   `json:"cost"`
 	RequestedAt   time.Time `json:"requestedAt"`
 
-	Pending bool `json:"pending"`
-	ID      int  `json:"id"`
+	Pending bool  `json:"pending"`
+	ID      int64 `json:"id"`
 }
 
 func (req *RequestForCreatedLvToken) Path() string {

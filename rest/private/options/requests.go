@@ -11,7 +11,7 @@ type RequestForOpQuoteRequests struct {
 type ResponseForOpQuoteRequests []OpQuote
 
 type OpQuote struct {
-	ID     int `json:"id"`
+	ID     int64 `json:"id"`
 	Option struct {
 		Underlying string    `json:"underlying"`
 		Type       string    `json:"type"`

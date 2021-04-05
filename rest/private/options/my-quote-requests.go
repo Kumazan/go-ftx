@@ -11,7 +11,7 @@ type RequestForMyOpQuoteRequests struct {
 type ResponseForMyOpQuoteRequests []MyOpQuote
 
 type MyOpQuote struct {
-	ID     int `json:"id"`
+	ID     int64 `json:"id"`
 	Option struct {
 		Underlying string    `json:"underlying"`
 		Type       string    `json:"type"`
@@ -24,7 +24,7 @@ type MyOpQuote struct {
 	LimitPrice     float64 `json:"limitPrice"`
 	HideLimitPrice bool    `json:"hideLimitPrice"`
 	Quotes         []struct {
-		ID          int       `json:"id"`
+		ID          int64     `json:"id"`
 		Collateral  float64   `json:"collateral"`
 		Price       float64   `json:"price"`
 		Status      string    `json:"status"`

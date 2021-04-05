@@ -32,9 +32,9 @@ type ResponseForModifyTriggerOrder struct {
 	Size         float64 `json:"size"`
 	FilledSize   float64 `json:"filledSize"`
 
-	ID               int  `json:"id"`
-	RetryUntilFilled bool `json:"retryUntilFilled"`
-	ReduceOnly       bool `json:"reduceOnly"`
+	ID               int64 `json:"id"`
+	RetryUntilFilled bool  `json:"retryUntilFilled"`
+	ReduceOnly       bool  `json:"reduceOnly"`
 
 	TriggeredAt time.Time `json:"triggeredAt"`
 	CreatedAt   time.Time `json:"createdAt"`

@@ -22,7 +22,7 @@ type Funding struct {
 	Rate    float64 `json:"rate"`
 
 	Time time.Time `json:"time"`
-	ID   int       `json:"id"`
+	ID   int64     `json:"id"`
 }
 
 func (req *Request) Path() string {

@@ -15,7 +15,7 @@ type RequestForTransferSubAccount struct {
 }
 
 type ResponseForTransferSubAccount struct {
-	ID     int    `json:"id"`
+	ID     int64  `json:"id"`
 	Coin   string `json:"coin"`
 	Status string `json:"status"`
 	Notes  string `json:"notes"`

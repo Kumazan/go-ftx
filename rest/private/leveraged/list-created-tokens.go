@@ -11,7 +11,7 @@ type RequestForCreatedLvTokens struct {
 type ResponseForCreatedLvTokens []Creation
 
 type Creation struct {
-	ID    int    `json:"id"`
+	ID    int64  `json:"id"`
 	Token string `json:"token"`
 
 	Price         float64   `json:"price"`

@@ -16,7 +16,7 @@ type RequestForOpFills struct {
 type ResponseForOpFills []OpTrade
 
 type OpFill struct {
-	ID        int       `json:"id"`
+	ID        int64     `json:"id"`
 	Liquidity string    `json:"liquidity"`
 	Side      string    `json:"side"`
 	Price     float64   `json:"price"`
